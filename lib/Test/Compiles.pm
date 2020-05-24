@@ -77,7 +77,7 @@ Test::Compiles - tests if perl can compile a string of code
  use Test::More;
  use Test::Compiles;
  
- compiles_ok    q{ print "hello world" };
+ compiles       q{ print "hello world" };
  doesnt_compile q{ print "hello world  };   # missing end of quote
  
  done_testing;
